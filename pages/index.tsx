@@ -362,11 +362,11 @@ export default function Home() {
 						generation
 					</p>
 					<form
-						className='relative min-w-[500px] mt-8'
+						className='relative mt-8'
 						onSubmit={(e) => {
 							e.preventDefault();
 						}}>
-						<div className='relative flex items-center px-8 py-6 bg-white text-black rounded-[10px]'>
+						<div className='relative flex items-center px-8 py-6  min-w-[300px] mb-8 bg-white text-black rounded-[10px]'>
 							<input
 								type='email'
 								placeholder='Add your email here...'
@@ -381,8 +381,8 @@ export default function Home() {
 					</form>
 				</section>
 			</main>
-			<footer className='flex justify-between min-h-[545px] p-24 bg-black text-[#8E8E8E]'>
-				<div>
+			<footer className='flex justify-between flex-col md:flex-row gap-8 min-h-[545px] p-24 bg-black text-[#8E8E8E]'>
+				<div className='text-center md:text-left'>
 					<h4 className='text-[2rem]  uppercase text-white'>
 						fashion
 					</h4>
@@ -390,7 +390,7 @@ export default function Home() {
 						Complete your style with awesome <br /> clothes from us.
 					</p>
 					<div>
-						<div className='flex  gap-8 pt-8'>
+						<div className='flex justify-center md:justify-start gap-4 pt-8'>
 							<Link href='/'>
 								<div>
 									<Image
@@ -438,7 +438,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className='flex gap-x-44'>
+				<div className='flex flex-col md:flex-row items-center md:items-start gap-8 xl:gap-x-44 text-center md:text-left'>
 					<div className='flex flex-col'>
 						<h4 className='text-[#D9D9D9]'>Company</h4>
 						<Link href='/' className='mt-8'>
